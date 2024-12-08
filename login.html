@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout with Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <table class="header">
+        <tr class="nav-bar">
+            <th><img src="logo.png" alt="logo" style="width: 40px;"></th>
+            <th>Ambalika institute of management & technology</th>
+        </tr>
+    </table>
+    <!-- Content Table -->
+    <table class="content">
+        <tr>
+          <th>  <a href="index.html">Home</a></th>
+           <th> <a href="login.html">Login</a></th>
+            <th><a href="register.html">Registration</a></th>
+           <th> <a href="tab.html">Catalogue</a></th>
+           <th> <a href="#cart">Cart</a></th>
+        </tr>
+    </table>
+    <!-- Content Table -->
+    <table class="content">
+        
+        <tbody>
+            <tr>
+                <td class="department-list">CSE</td>
+                <td rowspan="4" class="login-form">
+                    <h3>Login Page</h3>
+                    <form action="#" method="post" id="registrationForm">
+                        <label for="name">User Name:</label>
+                        <input type="text" id="name" name="name" placeholder="username" required><br>
+                        		<small id="nameError" style="color: red; font-size: 0.8em;"></small>
+		
+		<br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="password" required><br>
+                        <small id="passwordError" style="color: red; font-size: 0.8em;"></small>
+		<br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="department-list">ECE</td>
+            </tr>
+            <tr>
+                <td class="department-list">EEE</td>
+            </tr>
+            <tr>
+                <td class="department-list">CIVIL</td>
+            </tr>
+        </tbody>
+    </table>
+<script src="script.js"></script>
+</body>
+</html>
